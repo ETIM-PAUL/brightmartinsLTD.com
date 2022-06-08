@@ -1,0 +1,376 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline-flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  transition: 1s;
+  /* padding:15px 460px; */
+  font-family: 'Oswald', sans-serif;
+  /* z-index: 100000; */
+}
+
+.carilon {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 39.47vmin;
+  height: 40.7vmin;
+  padding: 4.8vmin 2em 4.8vmin;
+  background-color: #f6f5f3;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slide-number {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 8vmin;
+  display: block !important;
+}
+
+.slide-number .current-number {
+  font-size: 8vmin;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.slide-number sup {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  font-size: 2vmin;
+  letter-spacing: 0.1em;
+  color: #5e5e5e;
+  vertical-align: top;
+  margin-left: 0.46em;
+}
+
+.slide-number sup .delimiter {
+  display: inline-block;
+  margin-right: 0.4em;
+}
+
+.text-primary {
+  color: gold;
+}
+
+header .phone {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 0.81em;
+  letter-spacing: 0.32em;
+  position: absolute;
+  top: 5.9vmin;
+  z-index: 3;
+  color: #fff;
+  left: 50vmin;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  header .phone {
+    display: none;
+  }
+}
+
+.social {
+  z-index: 3;
+  background-color: #f6f5f3;
+  height: 100vh;
+}
+
+.social-content {
+  position: absolute;
+  z-index: 4;
+}
+
+.social,
+.social-content {
+  width: 19.735vmin;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social-info {
+  margin-bottom: 1vmin;
+}
+
+.social-title {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 10px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: #000;
+  position: relative;
+  left: -6px;
+  margin: 0 auto;
+  width: 1px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* @media (min-height: 850px){
+  .social-title {
+      display: none;
+  }
+} */
+.social-info .line {
+  height: 5vmin;
+  width: 1px;
+  margin: 15px auto 0;
+  background-color: #c5c4c2;
+}
+
+.social-list {
+  /* margin-right: 15rem; */
+  margin-bottom: 3.5vmin;
+  display: grid;
+}
+
+.social-list li {
+  font-size: 2.4vmin;
+  color: #c5c4c2;
+}
+
+.social-list li:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-list li {
+  margin-top: 3.8vmin;
+}
+
+.navbar-desctop {
+  /* display: none; */
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5.9vmin 0 0;
+}
+
+.navbar-desctop .brand {
+  display: none;
+  position: relative;
+  top: -0.22em;
+  font-size: 1.6em;
+}
+
+@media (min-width: 992px) {
+  .menu-main-container {
+    float: right;
+  }
+}
+
+.navbar-desctop-menu {
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 0.81em;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.navbar-desctop-menu>li {
+  float: left;
+  margin-left: 4.1em;
+}
+
+.navbar-desctop-menu li {
+  position: relative;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+
+@media (min-width: 992px) {
+  /* .navbar-mobile {
+      position: absolute;
+      left: -50000px;
+      top: -50000px;
+  } */
+}
+
+.navbar-mobile {
+  opacity: 0.9;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* padding: 6vmin 0; */
+  transform: 2s;
+  animation: ease-in;
+}
+
+.navbar-mobile .brand {
+  display: none;
+  margin-left: 15px;
+  font-size: 1.6em;
+}
+
+.brand {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4vmin;
+  line-height: 1;
+  color: #3d3d3d;
+}
+
+a {
+  color: gold;
+  -webkit-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out;
+}
+
+.navbar-toggle {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+element.style {
+  height: 0px;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+}
+
+.navbar-collapse {
+  border: 0;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: none;
+}
+
+.navbar-nav-mobile {
+  padding-right: 78px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  margin-bottom: 0;
+  padding-left: 78px;
+}
+
+.navbar-nav-mobile li {
+  margin-left: 4.1em;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sticky {
+  display: block !important;
+  position: fixed;
+  transition-delay: 3s;
+}
+
+header ul li .mobile-link {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 0.81em;
+  letter-spacing: 0.32em;
+  text-transform: uppercase
+}
+
+header ul li .stickly {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.81em;
+  letter-spacing: 0.32em;
+  text-transform: uppercase
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+
+}
+
+header ul li .link {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase
+}
+
+header ul li .link:hover {
+  color: gold
+}
+
+header ul li .mobile-link:hover {
+  color: gold
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../backgroundImages/img2.jpg);
+  background-size: cover;
+}
+
+
+
+.social {}

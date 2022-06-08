@@ -1,0 +1,187 @@
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  color: white;
+  border-top-right-radius: 100px;
+  font-size: 10px;
+  line-height: 15px;
+  display: inline-block;
+  margin-top: 30px;
+  background: linear-gradient(to right, #000000, #b7a230);
+}
+
+.row-column {
+  width: auto;
+  margin: 14px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.coloumn {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.coloumn:nth-child(2),
+.coloumn:nth-child(3),
+.coloumn:nth-child(4) {
+  flex-basis: 15%;
+}
+
+.sub-heading {
+  color: #fff;
+}
+
+.company-name {
+  color: white;
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.change {
+  mix-blend-mode: color-dodge;
+  color: gold;
+  width: fit-content;
+  position: relative;
+  font-size: 14px;
+}
+
+.email_id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 1px;
+}
+
+ul .links:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  margin-top: 10px;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+}
+
+#email-input {
+  margin-left: -23px;
+  background: transparent;
+  border: none;
+}
+
+#email-submit {
+  margin-left: 25px;
+}
+
+.newsletter i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.newsletter input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: blue;
+  background: transparent;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 85px;
+  height: 5px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+}
+
+.underline1 {
+  width: 50px;
+  height: 5px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+}
+
+input::placeholder {
+  color: #000
+}
+
+.underline span,
+.underline1 span {
+  width: 15px;
+  height: 100%;
+  background: gold;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+
+  .coloumn {
+    flex-basis: 100%;
+  }
+
+  .coloumn:nth-child(2),
+  .coloumn:nth-child(3),
+  .coloumn:nth-child(4) {
+    flex-basis: 15%;
+  }
+}
