@@ -142,7 +142,8 @@ header .phone {
 .social-list {
   /* margin-right: 15rem; */
   margin-bottom: 3.5vmin;
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-list li {

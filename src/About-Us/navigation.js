@@ -4,7 +4,7 @@ import "../FrontPage/nav.css";
 import "../css/animate.css";
 import {FaFacebook, FaInstagram} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
-import imgj from "../backgroundImages/carrillion.png";
+import imgj from "../backgroundImages/logo.webp";
 
 const NavigationHeader = () => {
   const [clicked, setClicked] = useState(false);
@@ -27,7 +27,7 @@ const NavigationHeader = () => {
       <header>
         <div className="carilon">
           <a href="/" class="brand">
-            <img alt="" class="img-responsive center-block" src={imgj} />
+            <img alt="" class="img-responsive center-block" src={imgj} width={200} />
           </a>
           <ul className="social-list">
             <li>
@@ -44,12 +44,7 @@ const NavigationHeader = () => {
         <nav className="navbar-desctop visible-md visible-lg ainimated slideInDown affix-top">
           <div className="container">
             <a href="#top" className="brand js-target-scroll">
-              <img
-                alt=""
-                height="40px"
-                className="center-block"
-                src="https://carrillionng.com.ng/wp-content/uploads/2018/08/carrillion.png"
-              />
+              <img alt="" height="40px" className="center-block" />
             </a>
             <div className="menu-main-container">
               <ul id="menu-main" className="navbar-desctop-menu ">

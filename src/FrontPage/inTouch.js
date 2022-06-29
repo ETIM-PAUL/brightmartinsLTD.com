@@ -11,27 +11,28 @@ const GetInTouch = () => {
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState();
 
-  function showValues() {
+  function sendMessage() {
     emailjs.init("1nRvslQBF3lSWX4f1");
-    function handleSubmit() {
-      let form = document.getElementById("emailForm");
-      emailjs.sendForm("service_imn36zb", "template_u3o37iq", form).then(
-        function () {
-          console.log("SUCCESS!");
-          toast("Email successfully sent!");
-        },
-        function (error) {
-          console.log("FAILED...", error);
-          toast.error("Email not sent!");
-        }
-      );
-      setCompany("");
-      setEmail();
-      setMessage();
-      setPhone("");
-      setName("");
+    // if (!message || !email) {
+    //   toast("Please Fill all required fields");
+    // }
+    async function handleSubmit() {
+      if (message && email) {
+        let form = document.getElementById("emailForm");
+        emailjs.sendForm("service_imn36zb", "template_u3o37iq", form).then(
+          function () {
+            console.log("SUCCESS!");
+            toast.success("Message successfully sent!");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            toast.error("Message not sent!");
+          }
+        );
+      } else if (!message || !email) {
+        toast.info("Please fill all required fields");
+      }
     }
-
     handleSubmit();
   }
 
@@ -115,7 +116,7 @@ const GetInTouch = () => {
                   type="submit"
                   className="btn btn-shadow-2 wow swing"
                   style={{visibility: "visible"}}
-                  onClick={() => showValues()}
+                  onClick={() => sendMessage()}
                 >
                   Send{" "}
                   <i className="icon-next">

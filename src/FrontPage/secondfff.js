@@ -66,7 +66,7 @@ const Content = () => {
   const slideLength = images.length;
   let index = imageIndex;
   // setInterval(function () {
-  //   nextImage();
+  //   nextImage(imageIndex);
   // }, 15000);
 
   const prevImage = () => {
@@ -85,31 +85,30 @@ const Content = () => {
       setImage();
     }, 2000);
   };
-  const nextImage = () => {
-    console.log(images.length);
+  const nextImage = (imageIndex) => {
     let css = document.querySelector(".animated-slides");
     let text = document.querySelector(".animate");
     let secText = document.querySelector(".contentText");
     setTimeout(function () {
       text.classList.remove("two");
-      text.classList.add("animate-text");
-      secText.classList.add("hid");
+      text.classList.toggle("animate-text");
+      secText.classList.toggle("hid");
       secText.classList.remove("exit");
     }, 500);
     setTimeout(() => {
-      css.classList.add("hinge");
+      css.classList.toggle("hinge");
     }, 1500);
     setTimeout(function setImage() {
-      css.classList.remove("hinge");
-      text.classList.remove("animate-text");
+      css.classList.toggle("hinge");
+      text.classList.toggle("animate-text");
       text.classList.add("two");
       secText.classList.add("exit");
-      secText.classList.remove("hid");
+      secText.classList.toggle("hid");
 
       if (imageIndex >= 0) {
-        if (imageIndex + 1 === images.length) {
+        if (imageIndex === 3) {
           setImageIndex(0);
-        } else if (imageIndex >= 0) {
+        } else if (imageIndex !== slideLength.length - 1) {
           setImageIndex((index += 1));
         }
       }

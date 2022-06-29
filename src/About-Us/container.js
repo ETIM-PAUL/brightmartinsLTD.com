@@ -1,6 +1,6 @@
 import React from "react";
-import {FaArrowAltCircleRight} from "react-icons/fa";
 import GetInTouch from "../FrontPage/inTouch";
+import map from "../backgroundImages/map.png";
 
 const About = () => {
   function showInfo() {
@@ -47,7 +47,8 @@ const About = () => {
                     <div class="container">
                       <div class="entry">
                         <h3 class="entry-title">
-                          We are Builders<span class="text-primary">.</span>
+                          We are Builders, Managers, Designers, etc
+                          <span class="text-primary">.</span>
                         </h3>
                         <div class="entry-text">
                           For each project we establish relationships with partners who we
@@ -86,7 +87,7 @@ const About = () => {
                                 src="https://www.carrillionng.com.ng/wp-content/uploads/2011/05/icon-architecture.png"
                               />
 
-                              <h4>DESIGN</h4>
+                              <h4>ARCHITECTURAL AND INTERIOR DESIGN </h4>
                               <p>
                                 Our design team constitute of well trained and skilful
                                 professionals who create master pieces of design, not
@@ -94,7 +95,11 @@ const About = () => {
                                 aesthetic integrity. We pay attention to every straights
                                 and curves, ensuring that our buildings always last into
                                 time and seasons and still maintaining its functional
-                                effectiveness, Aesthetics.
+                                effectiveness, Aesthetics. Comfort and Luxury are the
+                                major factors we consider in our interior spaces. With the
+                                efficient blend of top notch quality finishes from any
+                                where in the world, we give life to every of our interior
+                                spaces.
                               </p>
                             </div>
                           </div>
@@ -114,12 +119,18 @@ const About = () => {
                                 src="https://www.carrillionng.com.ng/wp-content/uploads/2011/05/icon-interiors.png"
                               />
 
-                              <h4>CONSTRUCTION</h4>
+                              <h4>CONSTRUCTION AND ESTATE MANAGEMENT</h4>
                               <p>
                                 We are equipped with the manpower and machinery to
                                 carryout any level of construction. Our construction
                                 materials are carefully selected to ensure structural
-                                integrity .
+                                integrity. We dont just minimize our serives in the
+                                building industry to only construction of buildings, we
+                                also offer services when it comes to managing buildings,
+                                estates, etc. We are wide network of attorneys, surveyors,
+                                realtors, agents, we make sure, your property is well
+                                managed, reducing the stress of managing a vast number of
+                                buildings.
                               </p>
                             </div>
                           </div>
@@ -139,12 +150,17 @@ const About = () => {
                                 src="https://www.carrillionng.com.ng/wp-content/uploads/2011/05/icon-planing.png"
                               />
 
-                              <h4>INTERIORS</h4>
+                              <h4>FREIGHT</h4>
                               <p>
-                                Comfort and Luxury are the major factors we consider in
-                                our interior spaces. With the efficient blend of top notch
-                                quality finishes from any where in the world, we give life
-                                to every of our interior spaces.
+                                We have the resources to ship your product, be it
+                                internationally or locally from one location to another.
+                                We can transport products using the means of air, water
+                                and land. We make sure your products are moved from point
+                                A to point B, without interfernce with local or
+                                international laws. With brightmartinsltd, your products
+                                are sure to be delivered to a warehouse, a docking yard,
+                                your office, your house, to any storage facitlity of your
+                                choice.
                               </p>
                             </div>
                           </div>
@@ -164,11 +180,7 @@ const About = () => {
                       </header>
                       <div class="section-content">
                         <div class="objects">
-                          <img
-                            alt=""
-                            class="img-responsive"
-                            src="https://www.carrillionng.com.ng/wp-content/uploads/2016/11/map.png"
-                          />
+                          <img alt="" class="img-responsive" src={map} />
 
                           {/* <!-- Objects --> */}
                           <div

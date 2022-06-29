@@ -4,9 +4,9 @@ import "./nav.css";
 import "../css/animate.css";
 import "react-icons";
 import {FaFacebook, FaInstagram, FaBars} from "react-icons/fa";
-import imgj from "../backgroundImages/carrillion.png";
+import imgj from "../backgroundImages/logo.webp";
 
-const NavigationHeader = () => {
+const NavigationHeader = (index) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -27,14 +27,20 @@ const NavigationHeader = () => {
       <header>
         <div className="carilon">
           <a href="/" class="brand">
-            <img alt="Brand" class="img-responsive center-block" src={imgj} />
+            <img
+              alt="Brand"
+              class="img-responsive center-block"
+              src={imgj}
+              height={200}
+              width={130}
+            />
           </a>
           <div className="slide-number">
             <span className="current-number text-primary">
-              <span className="count">01</span>
+              <span className="count">0{index.index + 1}</span>
             </span>
             <sup>
-              <span className="delimiter">/</span> <span className="total-count">05</span>
+              <span className="delimiter">/</span> <span className="total-count">04</span>
             </sup>
           </div>
         </div>
@@ -137,7 +143,7 @@ const NavigationHeader = () => {
         <nav
           className="navbar-mobile animated slideInDown"
           id="nav-mobile"
-          style={{display: "none"}}
+          style={{display: "none", zIndex: "1000"}}
         >
           <a href="#top" className="brand js-target-scroll">
             <span className="text-primary"></span>{" "}

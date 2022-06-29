@@ -5,6 +5,7 @@ import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Projects from "./Projects";
+import Contact from "./Contact-Us";
 <div className="App">
   <TawkMessengerReact propertyId="property_id" widgetId="default" />
 </div>;
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Index />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/contact-us" element={<AboutUs />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </Router>
     </>

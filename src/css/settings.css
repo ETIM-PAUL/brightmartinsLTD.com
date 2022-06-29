@@ -19,11 +19,11 @@ website:   	http://www.themepunch.com
 
 @font-face {
 	font-family: 'revicons';
-	src: url("//db.onlinewebfonts.com/revicons.eot?5510888");
-	src: url("//db.onlinewebfonts.com/revicons.eot?5510888#iefix") format('embedded-opentype'),
-		url("//db.onlinewebfonts.com/revicons.woff?5510888") format('woff'),
-		url("//db.onlinewebfonts.com/revicons.ttf?5510888") format('truetype'),
-		url("//db.onlinewebfonts.com/revicons.svg?5510888#revicons") format('svg');
+	src: url('//db.onlinewebfonts.com/c/revicons.eot?5510888');
+	src: url('//db.onlinewebfonts.com/c/revicons.eot?5510888#iefix') format('embedded-opentype'),
+		url('//db.onlinewebfonts.com/c/revicons.woff?5510888') format('woff'),
+		url('//db.onlinewebfonts.com/c/revicons.ttf?5510888') format('truetype'),
+		url('//db.onlinewebfonts.com/c/revicons.svg?5510888#revicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,7 +33,7 @@ website:   	http://www.themepunch.com
 	font-family: "revicons";
 	font-style: normal;
 	font-weight: normal;
-	/* speak: none; */
+	speak: none;
 	display: inline-block;
 	text-decoration: inherit;
 	width: 1em;
@@ -62,217 +62,217 @@ website:   	http://www.themepunch.com
 	content: '\e802';
 }
 
-/* 'î ‚' */
+/* '' */
 .revicon-pencil-1:before {
 	content: '\e831';
 }
 
-/* 'î ±' */
+/* '' */
 .revicon-picture-1:before {
 	content: '\e803';
 }
 
-/* 'î ƒ' */
+/* '' */
 .revicon-cancel:before {
 	content: '\e80a';
 }
 
-/* 'î Š' */
+/* '' */
 .revicon-info-circled:before {
 	content: '\e80f';
 }
 
-/* 'î ' */
+/* '' */
 .revicon-trash:before {
 	content: '\e801';
 }
 
-/* 'î ' */
+/* '' */
 .revicon-left-dir:before {
 	content: '\e817';
 }
 
-/* 'î —' */
+/* '' */
 .revicon-right-dir:before {
 	content: '\e818';
 }
 
-/* 'î ˜' */
+/* '' */
 .revicon-down-open:before {
 	content: '\e83b';
 }
 
-/* 'î »' */
+/* '' */
 .revicon-left-open:before {
 	content: '\e819';
 }
 
-/* 'î ™' */
+/* '' */
 .revicon-right-open:before {
 	content: '\e81a';
 }
 
-/* 'î š' */
+/* '' */
 .revicon-angle-left:before {
 	content: '\e820';
 }
 
-/* 'î  ' */
+/* '' */
 .revicon-angle-right:before {
 	content: '\e81d';
 }
 
-/* 'î ' */
+/* '' */
 .revicon-left-big:before {
 	content: '\e81f';
 }
 
-/* 'î Ÿ' */
+/* '' */
 .revicon-right-big:before {
 	content: '\e81e';
 }
 
-/* 'î ž' */
+/* '' */
 .revicon-magic:before {
 	content: '\e807';
 }
 
-/* 'î ‡' */
+/* '' */
 .revicon-picture:before {
 	content: '\e800';
 }
 
-/* 'î €' */
+/* '' */
 .revicon-export:before {
 	content: '\e80b';
 }
 
-/* 'î ‹' */
+/* '' */
 .revicon-cog:before {
 	content: '\e832';
 }
 
-/* 'î ²' */
+/* '' */
 .revicon-login:before {
 	content: '\e833';
 }
 
-/* 'î ³' */
+/* '' */
 .revicon-logout:before {
 	content: '\e834';
 }
 
-/* 'î ´' */
+/* '' */
 .revicon-video:before {
 	content: '\e805';
 }
 
-/* 'î …' */
+/* '' */
 .revicon-arrow-combo:before {
 	content: '\e827';
 }
 
-/* 'î §' */
+/* '' */
 .revicon-left-open-1:before {
 	content: '\e82a';
 }
 
-/* 'î ª' */
+/* '' */
 .revicon-right-open-1:before {
 	content: '\e82b';
 }
 
-/* 'î «' */
+/* '' */
 .revicon-left-open-mini:before {
 	content: '\e822';
 }
 
-/* 'î ¢' */
+/* '' */
 .revicon-right-open-mini:before {
 	content: '\e823';
 }
 
-/* 'î £' */
+/* '' */
 .revicon-left-open-big:before {
 	content: '\e824';
 }
 
-/* 'î ¤' */
+/* '' */
 .revicon-right-open-big:before {
 	content: '\e825';
 }
 
-/* 'î ¥' */
+/* '' */
 .revicon-left:before {
 	content: '\e836';
 }
 
-/* 'î ¶' */
+/* '' */
 .revicon-right:before {
 	content: '\e826';
 }
 
-/* 'î ¦' */
+/* '' */
 .revicon-ccw:before {
 	content: '\e808';
 }
 
-/* 'î ˆ' */
+/* '' */
 .revicon-arrows-ccw:before {
 	content: '\e806';
 }
 
-/* 'î †' */
+/* '' */
 .revicon-palette:before {
 	content: '\e829';
 }
 
-/* 'î ©' */
+/* '' */
 .revicon-list-add:before {
 	content: '\e80c';
 }
 
-/* 'î Œ' */
+/* '' */
 .revicon-doc:before {
 	content: '\e809';
 }
 
-/* 'î ‰' */
+/* '' */
 .revicon-left-open-outline:before {
 	content: '\e82e';
 }
 
-/* 'î ®' */
+/* '' */
 .revicon-left-open-2:before {
 	content: '\e82c';
 }
 
-/* 'î ¬' */
+/* '' */
 .revicon-right-open-outline:before {
 	content: '\e82f';
 }
 
-/* 'î ¯' */
+/* '' */
 .revicon-right-open-2:before {
 	content: '\e82d';
 }
 
-/* 'î ­' */
+/* '' */
 .revicon-equalizer:before {
 	content: '\e83a';
 }
 
-/* 'î º' */
+/* '' */
 .revicon-layers-alt:before {
 	content: '\e804';
 }
 
-/* 'î „' */
+/* '' */
 .revicon-popup:before {
 	content: '\e828';
 }
 
-/* 'î ¨' */
+/* '' */
 
 
 
@@ -406,11 +406,11 @@ website:   	http://www.themepunch.com
 
 /* CAROUSEL FUNCTIONS */
 .tp-carousel-wrapper {
-	cursor: grabbing, move;
+	cursor: url("https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur"), move;
 }
 
 .tp-carousel-wrapper.dragged {
-	cursor: cell, move;
+	cursor: url("https://ssl.gstatic.com/ui/v1/icons/mail/images/2/closedhand.cur"), move;
 }
 
 /* ADDED FOR SLIDELINK MANAGEMENT */
@@ -427,7 +427,6 @@ website:   	http://www.themepunch.com
 
 
 .tp-caption {
-	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
@@ -437,7 +436,6 @@ website:   	http://www.themepunch.com
 }
 
 .tp-caption.tp-layer-selectable {
-	user-select: none;
 	-moz-user-select: all;
 	-khtml-user-select: all;
 	-webkit-user-select: all;
@@ -468,7 +466,6 @@ website:   	http://www.themepunch.com
 	-	FULLSCREEN AND FULLWIDHT CONTAINERS	-
 **********************************************/
 .rev_slider_wrapper {
-	/* height: 800px; */
 	width: 100%;
 }
 
@@ -1080,7 +1077,6 @@ img.tp-slider-alternative-image {
 	font-weight: normal;
 	position: relative;
 	top: 0px;
-	transition: all 0.2s ease-out !important;
 	-webkit-transition: all 0.2s ease-out !important;
 	-moz-transition: all 0.2s ease-out !important;
 	-o-transition: all 0.2s ease-out !important;
@@ -1093,7 +1089,6 @@ img.tp-slider-alternative-image {
 	font-weight: normal;
 	position: relative;
 	top: 0px;
-	transition: all 0.2s ease-out !important;
 	-webkit-transition: all 0.2s ease-out !important;
 	-moz-transition: all 0.2s ease-out !important;
 	-o-transition: all 0.2s ease-out !important;
@@ -1170,7 +1165,7 @@ img.tp-slider-alternative-image {
 	padding: 22px 0 0 14px;
 	border-radius: 50%;
 	border: 1px solid rgba(51, 51, 51, 0.25);
-	/* tap-highlight-color: transparent; */
+	tap-highlight-color: transparent;
 	cursor: pointer;
 }
 
@@ -1486,7 +1481,6 @@ img.tp-slider-alternative-image {
 ***********************************************/
 
 .tp-simpleresponsive img {
-	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;

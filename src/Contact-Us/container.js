@@ -20,7 +20,7 @@ const About = () => {
       >
         <div class="container">
           <header class="main-header">
-            <h1>Projects</h1>
+            <h1>Contact Us</h1>
             <div class="project-title-info"></div>
           </header>
         </div>
@@ -48,30 +48,7 @@ const About = () => {
           <div class="vc_row wpb_row vc_row-fluid">
             <div class="wpb_column vc_column_container vc_col-sm-12">
               <div class="vc_column-inner ">
-                <div class="wpb_wrapper">
-                  {/* <!-- About  --> */}
-                  <section class="projects">
-                    <div class="js-projects-gallery">
-                      <div class=" projects_block row">
-                        <ProjectImage
-                          projectName="Interior Design and Re-Modelling"
-                          img="https://www.carrillionng.com.ng/wp-content/uploads/2019/04/featured-1.jpg"
-                        />
-                        <ProjectImage projectName="Freight Delivery" img={freight} />
-                        <ProjectImage
-                          projectName="Architecture and Construction"
-                          img={construction}
-                        />
-                        <ProjectImage
-                          projectName="Real Estate Management"
-                          img="https://www.carrillionng.com.ng/wp-content/uploads/2021/11/featuredagnes5.jpg"
-                        />
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* <!-- Contacts --> */}
-                </div>
+                <div class="wpb_wrapper"></div>
               </div>
             </div>
           </div>

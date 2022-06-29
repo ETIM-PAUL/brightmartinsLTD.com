@@ -30,21 +30,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <!-- <script
-  type="text/javascript"
-  src="https://www.carrillionng.com.ng/wp-content/themes/goarch/js/owl.carousel.min.js?ver=1"
-  id="owl-carousel-js"
-></script>; -->
-     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+     <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"> -->
 
      </script>
-    <script
-  type="text/javascript"
-  src="https://www.carrillionng.com.ng/wp-content/themes/goarch/js/owl.carousel.min.js?ver=1"
-  id="owl-carousel-js"
->
-</script>;
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- <script>
+     $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      margin: 15,
+      nav: true,
+      navText: ["<div class='owl-buttons owl-prev'></div>", "<div class='owl-buttons owl-next'></div>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  });
+  </script> -->
 <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
   if(htmlDiv) {
     htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
@@ -54,9 +64,14 @@
     document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
   }
 </script>
+<script type="text/javascript">function setREVStartSize(e){									
+  try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+    if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+  }catch(d){console.log("Failure at Presize of Slider:"+d)}						
+};</script>
 <script type="text/javascript">
-// if (setREVStartSize !== undefined) setREVStartSize(
-// {c: '#rev_slider_1_1', responsiveLevels: [2048,1750,1192,], gridwidth: [1140,1140,940,940], gridheight: [550,550,550,550], sliderLayout: 'fullscreen', fullScreenAutoWidth:'off', fullScreenAlignForce:'off', fullScreenOffsetContainer:'', fullScreenOffset:''});
+if (setREVStartSize !== undefined) setREVStartSize(
+{c: '#rev_slider_1_1', responsiveLevels: [2048,1750,1192,], gridwidth: [1140,1140,940,940], gridheight: [550,550,550,550], sliderLayout: 'fullscreen', fullScreenAutoWidth:'off', fullScreenAlignForce:'off', fullScreenOffsetContainer:'', fullScreenOffset:''});
 
 var revapi1,
 tpj;	
