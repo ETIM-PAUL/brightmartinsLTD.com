@@ -3,7 +3,6 @@ import Index from "./FrontPage";
 import AboutUs from "./About-Us";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Projects from "./Projects";
 import Contact from "./Contact-Us";
 import { active, inactive, inactiveAni, links } from "./utils/operations";
@@ -11,9 +10,6 @@ import imgj from "./backgroundImages/logo.webp";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
-<div className="App">
-  <TawkMessengerReact propertyId="property_id" widgetId="default" />
-</div>;
 function App() {
   const [clicked, setClicked] = useState(false);
 

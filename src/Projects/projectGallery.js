@@ -5,7 +5,7 @@ const ProjectImage = ({ projectName, img }) => {
     <div className="project project_item  col-sm-6 col-md-4 col-lg-3">
       <a className="link" href="/">
         <figure>
-          <img src={img} />
+          <img src={img} alt="" />
 
           <figcaption>
             <h3 className="project-title">{projectName}</h3>
