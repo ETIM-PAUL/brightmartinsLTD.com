@@ -9,6 +9,11 @@
   min-height: 420px;
 }
 
+.img-responsiv {
+  width: 50%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
 
   .arrow-left {
@@ -84,16 +89,23 @@
 
 .arrow-left,
 .arrow-right {
+  width: 99px;
+  height: 10px;
   font-size: 16px;
   position: absolute;
   padding-top: 10px;
-  z-index: 4;
+  z-index: 3;
   bottom: 4vh;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.arrow-right:hover {
+  color: gold;
+}
+
 
 .vc_row {
   margin-left: -15px;
@@ -229,6 +241,14 @@ h2,
 span,
 .text {
   color: gold;
+}
+
+.total-count {
+  color: black;
+}
+
+.delimiter {
+  color: #000;
 }
 
 .section-content {
@@ -936,4 +956,10 @@ figure img {
 .project_item:hover .project-zoom {
   opacity: 1;
   transform: none;
+}
+
+.activated-link {
+  background-color: gold;
+  width: 100%;
+  /* margin-left: -3px; */
 }

@@ -177,7 +177,17 @@ hr {
 }
 
 .underline1 {
-  width: 50px;
+  width: 65px;
+  height: 5px;
+  background: #000;
+  border-radius: 3px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+}
+
+.underline2 {
+  width: 45px;
   height: 5px;
   background: #000;
   border-radius: 3px;
@@ -191,7 +201,8 @@ input::placeholder {
 }
 
 .underline span,
-.underline1 span {
+.underline1 span,
+.underline2 span {
   width: 15px;
   height: 100%;
   background: gold;
@@ -199,7 +210,7 @@ input::placeholder {
   position: absolute;
   top: 0;
   left: 10px;
-  animation: moving 2s linear infinite;
+  animation: moving 2.5s linear infinite;
 }
 
 @keyframes moving {

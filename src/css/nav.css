@@ -12,12 +12,44 @@ header {
   /* z-index: 100000; */
 }
 
+.active {
+  color: gold !important;
+  text-decoration: none !important;
+}
+
+.active:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+.inactive:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+.inactive {
+  color: white;
+}
+
+.inactiveAni {
+  color: black;
+  text-decoration: none !important;
+}
+
+.inactiveAni:hover {
+  color: gold;
+}
+
+.hover-link:hover {
+  list-style: none !important;
+}
+
 .carilon {
   position: absolute;
   z-index: 4;
   left: 0;
   top: 0;
-  width: 39.47vmin;
+  width: 37.47vmin;
   height: 40.7vmin;
   padding: 4.8vmin 2em 4.8vmin;
   background-color: #f6f5f3;
@@ -218,15 +250,16 @@ ul {
 }
 
 .navbar-mobile {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   left: 0;
   top: 0;
   width: 100%;
   /* padding: 6vmin 0; */
   transform: 2s;
   animation: ease-in;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar-mobile .brand {
@@ -245,7 +278,7 @@ ul {
 }
 
 a {
-  color: gold;
+  color: white;
   -webkit-transition: color .3s ease-out;
   -o-transition: color .3s ease-out;
   transition: color .3s ease-out;
@@ -291,12 +324,17 @@ element.style {
   padding-bottom: 1.2em;
   margin-bottom: 0;
   padding-left: 78px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav-mobile li {
   margin-left: 4.1em;
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #000 !important;
+  display: flex;
+  margin-top: 10px;
 }
 
 .sticky {
@@ -371,7 +409,3 @@ header ul li .mobile-link:hover {
   background: url(../backgroundImages/img2.jpg);
   background-size: cover;
 }
-
-
-
-.social {}

@@ -1,12 +1,12 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles.css";
-import {FaEnvelope} from "react-icons/fa";
-import {FaArrowAltCircleRight} from "react-icons/fa";
-import {FaFacebook} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa";
-import {FaWhatsapp} from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
             <h3 className="company-name">
               {" "}
               brightmartins
-              <span style={{color: "gold"}}>LTD</span>
+              <span style={{ color: "gold" }}>LTD</span>
             </h3>
             <h4 className="change">
               You Visualize, We Build. You Ask, We Bring it to your Doorstep! General
@@ -26,20 +26,20 @@ const Footer = () => {
           </div>
           <div className="coloumn">
             <h3 className="sub-heading">
-              Office{" "}
+              Contact
               <div className="underline1">
                 <span></span>
               </div>
             </h3>
-            <p>Federal Secretariat</p>
-            <p>Calabar, Cross River, Nigeria</p>
+            <p>Calabar, Lagos, Abuja</p>
+            <p>Nigeria</p>
             <p className="email-id">info@brightmartinsLTD.com</p>
             <p>+234 818 658 7786</p>
           </div>
           <div className="coloumn">
             <h3 className="sub-heading">
               Links
-              <div className="underline1">
+              <div className="underline2">
                 <span></span>
               </div>
             </h3>
@@ -53,13 +53,13 @@ const Footer = () => {
               <Link to="/projects">
                 <li className="links">Our Projects</li>
               </Link>
-              <Link to="/contact-us">
+              <Link to="/contact">
                 <li className="links">Contact Us</li>
               </Link>
             </ul>
           </div>
           <div className="cololumn">
-            <h3 className="sub-heading" style={{marginTop: "28.3px"}}>
+            <h3 className="sub-heading" style={{ marginTop: "28.3px" }}>
               Newsletter
               <div className="underline">
                 <span></span>
@@ -68,7 +68,7 @@ const Footer = () => {
             want to know about our next project? submit your mailing address.
             <form className="newsletter">
               <i>
-                <FaEnvelope style={{zIndex: "3", opacity: "0.5"}} />
+                <FaEnvelope style={{ zIndex: "3", opacity: "0.5" }} />
               </i>
               <input
                 type="email"
@@ -76,26 +76,26 @@ const Footer = () => {
                 required
                 id="email-input"
               ></input>
-              <button type="submit" style={{marginLeft: "20px"}}>
+              <button type="submit" style={{ marginLeft: "20px" }}>
                 <span>
                   <FaArrowAltCircleRight
-                    style={{color: "black", fontSize: "15px", display: "flex"}}
+                    style={{ color: "black", fontSize: "15px", display: "flex" }}
                   />
                 </span>
               </button>
             </form>
             <div className="social-icons">
               <i>
-                <FaFacebook style={{color: "black"}} />
+                <FaFacebook style={{ color: "black" }} />
               </i>
               <i>
-                <FaTwitter style={{color: "black"}} />
+                <FaTwitter style={{ color: "black" }} />
               </i>
               <i>
-                <FaInstagram style={{color: "black"}} />
+                <FaInstagram style={{ color: "black" }} />
               </i>
               <i>
-                <FaWhatsapp style={{color: "black"}} />
+                <FaWhatsapp style={{ color: "black" }} />
               </i>
             </div>
           </div>

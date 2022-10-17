@@ -13,9 +13,6 @@ const GetInTouch = () => {
 
   function sendMessage() {
     emailjs.init("1nRvslQBF3lSWX4f1");
-    // if (!message || !email) {
-    //   toast("Please Fill all required fields");
-    // }
     async function handleSubmit() {
       if (message && email) {
         let form = document.getElementById("emailForm");

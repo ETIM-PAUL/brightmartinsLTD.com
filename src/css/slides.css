@@ -36,9 +36,35 @@
   position: absolute;
   top: 40%;
   left: 55%;
-  z-index: 10;
   /* min-width: 450px; */
-  max-width: 450px;
+  max-width: 460px;
+  white-space: normal;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  text-align: right;
+  visibility: inherit;
+  transition: none 0s ease 0s;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  min-height: 0px;
+  max-height: none;
+  opacity: 1;
+  transform-origin: 50% 50% 0px;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.contentImg1 {
+  position: absolute;
+  top: 44% !important;
+  left: 55%;
+  /* min-width: 450px; */
+  max-width: 460px;
   white-space: normal;
   font-size: 30px;
   line-height: 45px;
@@ -63,10 +89,9 @@
 .contentText {
   display: flex;
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 54%;
-  z-index: 10;
-  max-width: 450px;
+  max-width: 460px;
   flex-wrap: wrap;
   font-size: 17px;
   line-height: 28px;
@@ -87,6 +112,53 @@
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transform-origin: 50% 50% 0px;
+}
+
+@media only screen and (max-width: 1037px) {
+  .contentText {
+    padding-right: 11px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .contentText {
+    top: 60%;
+    padding-right: 11px;
+  }
+}
+
+@media only screen and (max-width: 634px) {
+  .contentText {
+    top: 60%;
+    left: 25%;
+    padding-right: 11px;
+  }
+
+  .contentImg {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 487px) {
+  .contentText {
+    top: 60%;
+    left: 20%;
+  }
+
+  .contentImg {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 313px) {
+  .contentText {
+    top: 65%;
+    left: 20%;
+  }
+
+  .contentImg {
+    left: 20%;
+  }
 }
 
 .swirl-in-bck {
@@ -136,8 +208,8 @@
   }
 
   100% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
 }
@@ -150,8 +222,8 @@
   }
 
   100% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
 }
@@ -315,86 +387,86 @@
 }
 
 .animate span:nth-of-type(2) {
-  animation-delay: .05s;
+  animation-delay: .02s;
 }
 
 .animate span:nth-of-type(3) {
-  animation-delay: .1s;
+  animation-delay: .05s;
 }
 
 .animate span:nth-of-type(4) {
-  animation-delay: .15s;
+  animation-delay: .1s;
 }
 
 .animate span:nth-of-type(5) {
-  animation-delay: .2s;
+  animation-delay: .15s;
 }
 
 .animate span:nth-of-type(6) {
-  animation-delay: .25s;
+  animation-delay: .20s;
 }
 
 .animate span:nth-of-type(7) {
-  animation-delay: .3s;
+  animation-delay: .25s;
 }
 
 .animate span:nth-of-type(8) {
-  animation-delay: .35s;
+  animation-delay: .3s;
 }
 
 .animate span:nth-of-type(9) {
-  animation-delay: .4s;
+  animation-delay: .35s;
 }
 
 .animate span:nth-of-type(10) {
-  animation-delay: .45s;
+  animation-delay: .4s;
 }
 
 .animate span:nth-of-type(11) {
-  animation-delay: .5s;
+  animation-delay: .45s;
 }
 
 .animate span:nth-of-type(12) {
-  animation-delay: .55s;
+  animation-delay: .5s;
 }
 
 .animate span:nth-of-type(13) {
-  animation-delay: .6s;
+  animation-delay: .55s;
 }
 
 .animate span:nth-of-type(14) {
-  animation-delay: .65s;
+  animation-delay: .60s;
 }
 
 .animate span:nth-of-type(15) {
-  animation-delay: .7s;
+  animation-delay: .65s;
 }
 
 .animate span:nth-of-type(16) {
-  animation-delay: .75s;
+  animation-delay: .70s;
 }
 
 .animate span:nth-of-type(17) {
-  animation-delay: .8s;
+  animation-delay: .75s;
 }
 
 .animate span:nth-of-type(18) {
-  animation-delay: .85s;
+  animation-delay: .80s;
 }
 
 .animate span:nth-of-type(19) {
-  animation-delay: .9s;
+  animation-delay: .85s;
 }
 
 .animate span:nth-of-type(20) {
-  animation-delay: .95s;
+  animation-delay: .90s;
 }
 
 .two span {
   color: #fff;
   opacity: 0;
   transform: translate(200px, -100px) scale(2);
-  animation: ballDrop 2s forwards;
+  animation: ballDrop 3s forwards;
 }
 
 @keyframes ballDrop {
@@ -444,4 +516,8 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.contentImg span {
+  color: #fff !important;
 }

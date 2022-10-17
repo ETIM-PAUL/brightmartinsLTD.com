@@ -1,10 +1,11 @@
-import {Link} from "react-router-dom";
-import React, {useState} from "react";
-import "./nav.css";
+import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import "../css/nav.css";
 import "../css/animate.css";
 import "react-icons";
-import {FaFacebook, FaInstagram, FaBars} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaBars } from "react-icons/fa";
 import imgj from "../backgroundImages/logo.webp";
+import { links } from "../utils/operations";
 
 const NavigationHeader = (index) => {
   const [clicked, setClicked] = useState(false);
@@ -22,19 +23,26 @@ const NavigationHeader = (index) => {
     smallScreen.classList.toggle("nav-screen-mobile-sticky", window.scrollY > 0);
   });
 
+  window.addEventListener("click", function () {
+    let link = document.getElementById("nav-mobile");
+    let smallScreen = document.getElementById("nav-screen-mobile");
+    link.classList.toggle("sticky", window.scrollY > 0);
+    smallScreen.classList.toggle("nav-screen-mobile-sticky", window.scrollY > 0);
+  });
+
   return (
     <>
       <header>
         <div className="carilon">
-          <a href="/" class="brand">
+          <Link to="/" className="brand">
             <img
               alt="Brand"
-              class="img-responsive center-block"
+              className="img-responsiv center-block"
               src={imgj}
               height={200}
               width={130}
             />
-          </a>
+          </Link>
           <div className="slide-number">
             <span className="current-number text-primary">
               <span className="count">0{index.index + 1}</span>
@@ -50,7 +58,7 @@ const NavigationHeader = (index) => {
         <div className="social"></div>
         <div className="social-content">
           <div className="social-info">
-            <div className="social-title">Brightmatinsltd</div>
+            <div className="social-title">Brightmartinsltd</div>
             <div className="line"></div>
           </div>
           <ul className="social-list">
@@ -63,72 +71,18 @@ const NavigationHeader = (index) => {
           </ul>
         </div>
 
-        <nav className="navbar-desctop visible-md visible-lg ainimated slideInDown affix-top">
-          <div className="container">
-            <a href="#top" className="brand js-target-scroll">
-              <img alt="brand" height="40px" className="center-block" src={imgj} />
-            </a>
-            <div className="menu-main-container">
-              <ul id="menu-main" className="navbar-desctop-menu ">
-                <li
-                  id="menu-item-3704"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-701 current_page_item menu-item-3704 active "
-                >
-                  <Link to="/" aria-current="page" className="active link">
-                    Home
-                  </Link>
-                </li>
-                <li
-                  id="menu-item-1901"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1901"
-                >
-                  <Link to="/about-us" className="link">
-                    About Us
-                  </Link>
-                </li>
-                <li
-                  id="menu-item-2115"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2115"
-                >
-                  <Link to="/projects" className="link">
-                    Our Projects
-                  </Link>
-                </li>
-                <li
-                  id="menu-item-1929"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1929"
-                >
-                  <Link to="/contact" className="link">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>{" "}
-          </div>
-        </nav>
-
         <div id="menu-collapse">
           <ul className="menu-items">
-            <li className="menu-item">
-              <Link to="/" aria-current="page" className="active link">
-                Home
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/about-us" className="link">
-                About Us
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/projects" className="link">
-                Our Projects
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/contact" className="link">
-                Contact Us
-              </Link>
-            </li>
+            {links.map((item, index) => (
+              <li
+                style={{ backgroundColor: "gold" }}
+                key={index}
+              >
+                <NavLink to={`/${item.link}`} aria-current="page" className={({ isActive }) => isActive ? "menu-item activated-link link" : "menu-item link"}>
+                  {item.title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -140,68 +94,7 @@ const NavigationHeader = (index) => {
           )}
         </div>
 
-        <nav
-          className="navbar-mobile animated slideInDown"
-          id="nav-mobile"
-          style={{display: "none", zIndex: "1000"}}
-        >
-          <a href="#top" className="brand js-target-scroll">
-            <span className="text-primary"></span>{" "}
-          </a>
-          <div
-            className="navbar-collapse collapse"
-            id="navbar-mobile"
-            aria-expanded="false"
-            style={{height: "0px"}}
-          >
-            <ul id="menu-main-1" className="navbar-nav-mobile ">
-              <img
-                alt="brand"
-                height="40px"
-                className="center-block"
-                src={imgj}
-                style={{marginLeft: "20px"}}
-              />
-              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-701 current_page_item menu-item-3704 active">
-                <Link to="/" aria-current="page" className="mobile-link">
-                  Home
-                </Link>
-              </li>
-              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1901">
-                <Link to="/about-us" className="mobile-link">
-                  About Us
-                </Link>
-              </li>
-              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2115">
-                <Link to="/projects" className="mobile-link">
-                  Our Projects
-                </Link>
-              </li>
-              <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1929">
-                <Link to="contact" className="mobile-link">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>{" "}
-          </div>
-        </nav>
-
-        <nav
-          className="small-screen animated slideInDown"
-          id="nav-screen-mobile"
-          style={{display: "none"}}
-        >
-          <div onClick={handleClick} className="screen-menu">
-            {clicked ? (
-              <FaBars className="menu-iconn cancel" />
-            ) : (
-              <FaBars className="menu-iconn" />
-            )}
-          </div>
-        </nav>
       </header>
-
-      {/* <section className="banner" /> */}
     </>
   );
 };
